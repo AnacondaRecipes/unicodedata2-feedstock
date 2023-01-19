@@ -34,13 +34,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/mikekap/unicodedata2
+  home: https://github.com/fonttools/unicodedata2
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: unicodedata backport/updates to python 3 and python 2.
   description: unicodedata backport/updates to python 3 and python 2.
-  dev_url: https://github.com/mikekap/unicodedata2
+  dev_url: https://github.com/fonttools/unicodedata2
   doc_url: https://docs.python.org/3/library/unicodedata.html
 
 extra:

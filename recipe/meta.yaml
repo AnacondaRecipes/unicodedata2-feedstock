@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - unicodedata2
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/mikekap/unicodedata2

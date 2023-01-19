@@ -41,6 +41,7 @@ about:
   summary: unicodedata backport/updates to python 3 and python 2.
   description: unicodedata backport/updates to python 3 and python 2.
   dev_url: https://github.com/mikekap/unicodedata2
+  doc_url: https://docs.python.org/3/library/unicodedata.html
 
 extra:
   recipe-maintainers:

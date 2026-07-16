@@ -2,7 +2,7 @@
 {% set version = "17.0.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -26,6 +26,9 @@ requirements:
     - python
 
 test:
+  requires:
+    - pip
+    - pytest
   source_files:
     - tests
   imports:
@@ -33,9 +36,6 @@ test:
   commands:
     - pip check
     - pytest -v tests
-  requires:
-    - pip
-    - pytest
 
 about:
   home: https://github.com/fonttools/unicodedata2

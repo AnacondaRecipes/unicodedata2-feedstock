@@ -1,13 +1,13 @@
 {% set name = "unicodedata2" %}
-{% set version = "16.0.0" %}
+{% set version = "17.0.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 05488d6592b59cd78b61ec37d38725416b2df62efafa6a0d63a631b27aa474fc
+  sha256: d79943d153f5f6bfbe3f55a5ec611985184bda37fcedb3ecc75322d82ae6ad3b
 
 build:
   number: 0
@@ -26,6 +26,9 @@ requirements:
     - python
 
 test:
+  requires:
+    - pip
+    - pytest
   source_files:
     - tests
   imports:
@@ -33,9 +36,6 @@ test:
   commands:
     - pip check
     - pytest -v tests
-  requires:
-    - pip
-    - pytest
 
 about:
   home: https://github.com/fonttools/unicodedata2
